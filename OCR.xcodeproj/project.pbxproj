@@ -14,6 +14,10 @@
 		89CEF5F42046ED25000C1C4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CEF5F22046ED25000C1C4E /* LaunchScreen.storyboard */; };
 		89CEF5FF2046ED25000C1C4E /* OCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CEF5FE2046ED25000C1C4E /* OCRTests.swift */; };
 		89CEF60A2046ED25000C1C4E /* OCRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CEF6092046ED25000C1C4E /* OCRUITests.swift */; };
+		89CEF6192046ED9F000C1C4E /* OCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CEF6172046ED9F000C1C4E /* OCRViewController.swift */; };
+		89CEF61A2046ED9F000C1C4E /* OCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CEF6182046ED9F000C1C4E /* OCRViewController.xib */; };
+		89CEF61C2046F6C5000C1C4E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CEF61B2046F6C5000C1C4E /* Extentions.swift */; };
+		89CEF61E2046F7D5000C1C4E /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89CEF61D2046F7D5000C1C4E /* ReadMe.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		89CEF6052046ED25000C1C4E /* OCRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CEF6092046ED25000C1C4E /* OCRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRUITests.swift; sourceTree = "<group>"; };
 		89CEF60B2046ED25000C1C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89CEF6172046ED9F000C1C4E /* OCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRViewController.swift; sourceTree = "<group>"; };
+		89CEF6182046ED9F000C1C4E /* OCRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OCRViewController.xib; sourceTree = "<group>"; };
+		89CEF61B2046F6C5000C1C4E /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		89CEF61D2046F7D5000C1C4E /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				89CEF5F02046ED25000C1C4E /* Assets.xcassets */,
 				89CEF5F22046ED25000C1C4E /* LaunchScreen.storyboard */,
 				89CEF5F52046ED25000C1C4E /* Info.plist */,
+				89CEF6172046ED9F000C1C4E /* OCRViewController.swift */,
+				89CEF6182046ED9F000C1C4E /* OCRViewController.xib */,
+				89CEF61B2046F6C5000C1C4E /* Extentions.swift */,
+				89CEF61D2046F7D5000C1C4E /* ReadMe.rtf */,
 			);
 			path = OCR;
 			sourceTree = "<group>";
@@ -233,7 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CEF5F42046ED25000C1C4E /* LaunchScreen.storyboard in Resources */,
+				89CEF61A2046ED9F000C1C4E /* OCRViewController.xib in Resources */,
 				89CEF5F12046ED25000C1C4E /* Assets.xcassets in Resources */,
+				89CEF61E2046F7D5000C1C4E /* ReadMe.rtf in Resources */,
 				89CEF5EF2046ED25000C1C4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CEF61C2046F6C5000C1C4E /* Extentions.swift in Sources */,
 				89CEF5EC2046ED25000C1C4E /* ViewController.swift in Sources */,
 				89CEF5EA2046ED25000C1C4E /* AppDelegate.swift in Sources */,
+				89CEF6192046ED9F000C1C4E /* OCRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

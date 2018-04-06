@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BE2866AEAF26899C6E9DB76 /* Pods_OCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7857BD31E31CDCA4273658 /* Pods_OCR.framework */; };
+		890F0284204BBE4B0001CC7B /* info_ic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890F0283204BBE4B0001CC7B /* info_ic@3x.png */; };
+		897DFEF22077E0C600B4BA39 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFEEC2077E0C500B4BA39 /* CropViewController.swift */; };
+		897DFEF32077E0C600B4BA39 /* ResizeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFEED2077E0C500B4BA39 /* ResizeControl.swift */; };
+		897DFEF42077E0C600B4BA39 /* CropRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFEEF2077E0C500B4BA39 /* CropRectView.swift */; };
+		897DFEF52077E0C600B4BA39 /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFEF02077E0C500B4BA39 /* CropView.swift */; };
+		897DFEF62077E0C600B4BA39 /* UIImage+Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFEF12077E0C600B4BA39 /* UIImage+Crop.swift */; };
 		89CEF5EA2046ED25000C1C4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CEF5E92046ED25000C1C4E /* AppDelegate.swift */; };
 		89CEF5EC2046ED25000C1C4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CEF5EB2046ED25000C1C4E /* ViewController.swift */; };
 		89CEF5EF2046ED25000C1C4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CEF5ED2046ED25000C1C4E /* Main.storyboard */; };
@@ -18,6 +25,10 @@
 		89CEF61A2046ED9F000C1C4E /* OCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CEF6182046ED9F000C1C4E /* OCRViewController.xib */; };
 		89CEF61C2046F6C5000C1C4E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CEF61B2046F6C5000C1C4E /* Extentions.swift */; };
 		89CEF61E2046F7D5000C1C4E /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89CEF61D2046F7D5000C1C4E /* ReadMe.rtf */; };
+		89CEF62120471892000C1C4E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 89CEF62020471891000C1C4E /* tessdata */; };
+		89CEF62320471932000C1C4E /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CEF62220471932000C1C4E /* libstdc++.tbd */; };
+		89CEF62520471943000C1C4E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CEF62420471943000C1C4E /* CoreImage.framework */; };
+		89CEF6262047195A000C1C4E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CEF6272047195A000C1C4E /* TesseractOCR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BE60910FA7CC12DCF40C676 /* Pods-OCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR/Pods-OCR.release.xcconfig"; sourceTree = "<group>"; };
+		58D5A9B08D0C503E688204F5 /* Pods-OCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCR/Pods-OCR.debug.xcconfig"; sourceTree = "<group>"; };
+		6D7857BD31E31CDCA4273658 /* Pods_OCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		890F0283204BBE4B0001CC7B /* info_ic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info_ic@3x.png"; sourceTree = "<group>"; };
+		897DFEEC2077E0C500B4BA39 /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
+		897DFEED2077E0C500B4BA39 /* ResizeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizeControl.swift; sourceTree = "<group>"; };
+		897DFEEE2077E0C500B4BA39 /* CropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
+		897DFEEF2077E0C500B4BA39 /* CropRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropRectView.swift; sourceTree = "<group>"; };
+		897DFEF02077E0C500B4BA39 /* CropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
+		897DFEF12077E0C600B4BA39 /* UIImage+Crop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Crop.swift"; sourceTree = "<group>"; };
 		89CEF5E62046ED25000C1C4E /* OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CEF5E92046ED25000C1C4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89CEF5EB2046ED25000C1C4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +76,10 @@
 		89CEF6182046ED9F000C1C4E /* OCRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OCRViewController.xib; sourceTree = "<group>"; };
 		89CEF61B2046F6C5000C1C4E /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		89CEF61D2046F7D5000C1C4E /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		89CEF62020471891000C1C4E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		89CEF62220471932000C1C4E /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		89CEF62420471943000C1C4E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		89CEF6272047195A000C1C4E /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CEF6262047195A000C1C4E /* TesseractOCR.framework in Frameworks */,
+				89CEF62520471943000C1C4E /* CoreImage.framework in Frameworks */,
+				89CEF62320471932000C1C4E /* libstdc++.tbd in Frameworks */,
+				5BE2866AEAF26899C6E9DB76 /* Pods_OCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +111,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BE98F3DCEDC277D46898652 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58D5A9B08D0C503E688204F5 /* Pods-OCR.debug.xcconfig */,
+				3BE60910FA7CC12DCF40C676 /* Pods-OCR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		890F0282204BBE3E0001CC7B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				890F0283204BBE4B0001CC7B /* info_ic@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		897DFEEB2077E0B600B4BA39 /* Crop */ = {
+			isa = PBXGroup;
+			children = (
+				897DFEEF2077E0C500B4BA39 /* CropRectView.swift */,
+				897DFEF02077E0C500B4BA39 /* CropView.swift */,
+				897DFEEE2077E0C500B4BA39 /* CropViewController.h */,
+				897DFEEC2077E0C500B4BA39 /* CropViewController.swift */,
+				897DFEED2077E0C500B4BA39 /* ResizeControl.swift */,
+				897DFEF12077E0C600B4BA39 /* UIImage+Crop.swift */,
+			);
+			path = Crop;
+			sourceTree = "<group>";
+		};
 		89CEF5DD2046ED25000C1C4E = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +148,8 @@
 				89CEF5FD2046ED25000C1C4E /* OCRTests */,
 				89CEF6082046ED25000C1C4E /* OCRUITests */,
 				89CEF5E72046ED25000C1C4E /* Products */,
+				0BE98F3DCEDC277D46898652 /* Pods */,
+				D98CFBC1B98A1CF5996A63D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +166,9 @@
 		89CEF5E82046ED25000C1C4E /* OCR */ = {
 			isa = PBXGroup;
 			children = (
+				897DFEEB2077E0B600B4BA39 /* Crop */,
+				890F0282204BBE3E0001CC7B /* Resource */,
+				89CEF61F20471862000C1C4E /* Supporting Files */,
 				89CEF5E92046ED25000C1C4E /* AppDelegate.swift */,
 				89CEF5EB2046ED25000C1C4E /* ViewController.swift */,
 				89CEF5ED2046ED25000C1C4E /* Main.storyboard */,
@@ -137,6 +201,25 @@
 			path = OCRUITests;
 			sourceTree = "<group>";
 		};
+		89CEF61F20471862000C1C4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89CEF62020471891000C1C4E /* tessdata */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D98CFBC1B98A1CF5996A63D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89CEF6272047195A000C1C4E /* TesseractOCR.framework */,
+				89CEF62420471943000C1C4E /* CoreImage.framework */,
+				89CEF62220471932000C1C4E /* libstdc++.tbd */,
+				6D7857BD31E31CDCA4273658 /* Pods_OCR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89CEF60E2046ED25000C1C4E /* Build configuration list for PBXNativeTarget "OCR" */;
 			buildPhases = (
+				7205274E53EB700F17034E8F /* [CP] Check Pods Manifest.lock */,
 				89CEF5E22046ED25000C1C4E /* Sources */,
 				89CEF5E32046ED25000C1C4E /* Frameworks */,
 				89CEF5E42046ED25000C1C4E /* Resources */,
+				BAAE811C708090531F3902BE /* [CP] Embed Pods Frameworks */,
+				CC8C1A190EE0106F3F0866C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,10 +331,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CEF5F42046ED25000C1C4E /* LaunchScreen.storyboard in Resources */,
+				890F0284204BBE4B0001CC7B /* info_ic@3x.png in Resources */,
 				89CEF61A2046ED9F000C1C4E /* OCRViewController.xib in Resources */,
 				89CEF5F12046ED25000C1C4E /* Assets.xcassets in Resources */,
 				89CEF61E2046F7D5000C1C4E /* ReadMe.rtf in Resources */,
 				89CEF5EF2046ED25000C1C4E /* Main.storyboard in Resources */,
+				89CEF62120471892000C1C4E /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +356,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7205274E53EB700F17034E8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAAE811C708090531F3902BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCR/Pods-OCR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCR/Pods-OCR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC8C1A190EE0106F3F0866C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCR/Pods-OCR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89CEF5E22046ED25000C1C4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897DFEF52077E0C600B4BA39 /* CropView.swift in Sources */,
 				89CEF61C2046F6C5000C1C4E /* Extentions.swift in Sources */,
+				897DFEF22077E0C600B4BA39 /* CropViewController.swift in Sources */,
 				89CEF5EC2046ED25000C1C4E /* ViewController.swift in Sources */,
 				89CEF5EA2046ED25000C1C4E /* AppDelegate.swift in Sources */,
 				89CEF6192046ED9F000C1C4E /* OCRViewController.swift in Sources */,
+				897DFEF32077E0C600B4BA39 /* ResizeControl.swift in Sources */,
+				897DFEF42077E0C600B4BA39 /* CropRectView.swift in Sources */,
+				897DFEF62077E0C600B4BA39 /* UIImage+Crop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,13 +587,15 @@
 		};
 		89CEF60F2046ED25000C1C4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D5A9B08D0C503E688204F5 /* Pods-OCR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 688A5ZS9PE;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OCR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ocr.shohag.OCR;
+				PRODUCT_BUNDLE_IDENTIFIER = shohag.ocr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,13 +604,15 @@
 		};
 		89CEF6102046ED25000C1C4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE60910FA7CC12DCF40C676 /* Pods-OCR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 688A5ZS9PE;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OCR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ocr.shohag.OCR;
+				PRODUCT_BUNDLE_IDENTIFIER = shohag.ocr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

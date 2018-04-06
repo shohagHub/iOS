@@ -1,8 +1,49 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red11\green87\blue42;
+\red42\green44\blue51;\red249\green249\blue249;\red133\green85\blue4;\red147\green0\blue147;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c40784\c21569;
+\cssrgb\c21961\c22745\c25882;\cssrgb\c98039\c98039\c98039;\cssrgb\c59608\c40784\c392;\cssrgb\c65098\c14902\c64314;}
 \margl1440\margr1440\vieww9000\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Install tesseract pod}
+\f0\fs24 \cf0 Install tesseract pod\
+\
+Enter Project directory (where OCR.xcodeproj file is)\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 create a\'a0
+\b \cf4 \strokec4 Podfile
+\b0 \cf2 \strokec2 \'a0for your project in this location by running:
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 pod init\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Next, open the\'a0
+\b \cf4 \strokec4 Podfile
+\b0 \cf2 \strokec2 \'a0using a text editor and replace all of its current text with the following:\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\fs24 \cf5 \cb6 \strokec5 use_frameworks!\
+platform :ios, '\cf7 \strokec7 11.0\cf5 \strokec5 '\
+\
+target '\cf7 \strokec7 OCR'\cf5 \strokec5  \cf8 \strokec8 do\cf5 \strokec5 \
+  use_frameworks!\
+  pod '\cf7 \strokec7 TesseractOCRiOS'\cf5 \strokec5 \
+end\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+Then run command\
+\pard\pardeftab720\sl300\partightenfactor0
+\cf5 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 pod install\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+}

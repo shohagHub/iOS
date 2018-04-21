@@ -31,7 +31,6 @@
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P13-bl-oc9">
                     <rect key="frame" x="0.0" y="60.5" width="375" height="159"/>
-                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="159" id="pk6-jt-Ah9"/>
                     </constraints>

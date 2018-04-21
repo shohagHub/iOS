@@ -589,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58D5A9B08D0C503E688204F5 /* Pods-OCR.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 688A5ZS9PE;
@@ -606,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BE60910FA7CC12DCF40C676 /* Pods-OCR.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 688A5ZS9PE;

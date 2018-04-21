@@ -8,7 +8,7 @@
 
 import UIKit
 import TesseractOCR
-class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CropViewControllerDelegate {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -132,6 +132,28 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     //MARK:: Custom Action
     @objc func infoButtonAction() {
         print("infoButtonAction()");
+    }
+    
+    // MARK: - //CropViewControllerDelegate
+    
+    func cropViewController(_ controller: CropViewController, didFinishCroppingImage image: UIImage) {
+        //        controller.dismissViewControllerAnimated(true, completion: nil)
+        //        imageView.image = image
+        //        updateEditButtonEnabled()
+    }
+    
+    func cropViewController(_ controller: CropViewController, didFinishCroppingImage image: UIImage, transform: CGAffineTransform, cropRect: CGRect) {
+        print("didFinishCroppingImage()")
+        controller.dismiss(animated: true, completion: nil)
+        imageView.image = image
+        
+        //MARK:: image croping finished now process for character recognition
+        
+        self.performImageRecognition(image)
+    }
+    func cropViewControllerDidCancel(_ controller: CropViewController) {
+        controller.dismiss(animated: true, completion: nil)
+        //updateEditButtonEnabled()
     }
     
 }

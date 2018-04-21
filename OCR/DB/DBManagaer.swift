@@ -20,7 +20,8 @@ class DBManager {
     //insert/create
     func addTextContent(object: TextContent){
         try! database.write {
-            object.id = object.IncrementaID()
+//            object.id = object.IncrementaID()
+            object.date = NSDate()
             database.add(object, update: true)
             print("Content added successfully")
         }
@@ -39,8 +40,8 @@ class DBManager {
         }
     }
     
-    func contentId() -> Int?{
-        return database.objects(TextContent.self).sorted(byKeyPath: "id").first?.id
-    }
+//    func contentId() -> Int?{
+//        return database.objects(TextContent.self).sorted(byKeyPath: "id").first?.id
+//    }
     
 }

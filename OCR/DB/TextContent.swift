@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class TextContent: Object{
-    @objc dynamic var id = 0
+    @objc dynamic var id = UUID.init().uuidString
     @objc dynamic var content: String = ""
     @objc dynamic var date: NSDate = NSDate()
     
@@ -19,12 +19,12 @@ class TextContent: Object{
     }
     
     //Incrementa ID
-    func IncrementaID() -> Int{
-        //        let realm = try! Realm()
-        if let retNext = DBManager.sharedInstance.contentId() {
-            return retNext + 1
-        }else{
-            return 1
-        }
-    }
+//    func IncrementaID() -> Int{
+//        //        let realm = try! Realm()
+//        if let retNext = DBManager.sharedInstance.contentId() {
+//            return retNext + 1
+//        }else{
+//            return 1
+//        }
+//    }
 }

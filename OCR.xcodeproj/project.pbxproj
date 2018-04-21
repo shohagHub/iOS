@@ -10,6 +10,8 @@
 		5BE2866AEAF26899C6E9DB76 /* Pods_OCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7857BD31E31CDCA4273658 /* Pods_OCR.framework */; };
 		890F0284204BBE4B0001CC7B /* info_ic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890F0283204BBE4B0001CC7B /* info_ic@3x.png */; };
 		893C4B9C208BB2F00042FF3B /* TextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893C4B9B208BB2F00042FF3B /* TextContent.swift */; };
+		893C4B9F208BBBFF0042FF3B /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893C4B9D208BBBFF0042FF3B /* ContentViewController.swift */; };
+		893C4BA0208BBBFF0042FF3B /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893C4B9E208BBBFF0042FF3B /* ContentViewController.xib */; };
 		897DFEF22077E0C600B4BA39 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFEEC2077E0C500B4BA39 /* CropViewController.swift */; };
 		897DFEF32077E0C600B4BA39 /* ResizeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFEED2077E0C500B4BA39 /* ResizeControl.swift */; };
 		897DFEF42077E0C600B4BA39 /* CropRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFEEF2077E0C500B4BA39 /* CropRectView.swift */; };
@@ -81,6 +83,8 @@
 		6D7857BD31E31CDCA4273658 /* Pods_OCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		890F0283204BBE4B0001CC7B /* info_ic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info_ic@3x.png"; sourceTree = "<group>"; };
 		893C4B9B208BB2F00042FF3B /* TextContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContent.swift; sourceTree = "<group>"; };
+		893C4B9D208BBBFF0042FF3B /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		893C4B9E208BBBFF0042FF3B /* ContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
 		897DFEEC2077E0C500B4BA39 /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
 		897DFEED2077E0C500B4BA39 /* ResizeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizeControl.swift; sourceTree = "<group>"; };
 		897DFEEE2077E0C500B4BA39 /* CropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
@@ -228,6 +232,8 @@
 				89CEF61D2046F7D5000C1C4E /* ReadMe.rtf */,
 				8996F209208B99A50011A4B5 /* TextTableViewCell.swift */,
 				8996F20A208B99A50011A4B5 /* TextTableViewCell.xib */,
+				893C4B9D208BBBFF0042FF3B /* ContentViewController.swift */,
+				893C4B9E208BBBFF0042FF3B /* ContentViewController.xib */,
 			);
 			path = OCR;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				8996F205208B96AD0011A4B5 /* Realm.framework in Resources */,
 				8996F206208B96AD0011A4B5 /* RealmSwift.framework in Resources */,
 				89CEF5F42046ED25000C1C4E /* LaunchScreen.storyboard in Resources */,
+				893C4BA0208BBBFF0042FF3B /* ContentViewController.xib in Resources */,
 				890F0284204BBE4B0001CC7B /* info_ic@3x.png in Resources */,
 				89CEF61A2046ED9F000C1C4E /* OCRViewController.xib in Resources */,
 				89CEF5F12046ED25000C1C4E /* Assets.xcassets in Resources */,
@@ -478,6 +485,7 @@
 				89CEF5EC2046ED25000C1C4E /* ViewController.swift in Sources */,
 				8996F20B208B99A50011A4B5 /* TextTableViewCell.swift in Sources */,
 				89CEF5EA2046ED25000C1C4E /* AppDelegate.swift in Sources */,
+				893C4B9F208BBBFF0042FF3B /* ContentViewController.swift in Sources */,
 				89CEF6192046ED9F000C1C4E /* OCRViewController.swift in Sources */,
 				897DFEF32077E0C600B4BA39 /* ResizeControl.swift in Sources */,
 				897DFEF42077E0C600B4BA39 /* CropRectView.swift in Sources */,

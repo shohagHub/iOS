@@ -17,6 +17,8 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     static let IDENTIFIER: String = "textContent"
     
+    var data = DBManager.sharedInstance.getContentFromDb()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,9 +51,18 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
             tesseract.recognize()
             print(tesseract.recognizedText)
             textView.text = tesseract.recognizedText
+            let textContent: TextContent = TextContent()
+            textContent.content = tesseract.recognizedText
+            DBManager.sharedInstance.addTextContent(object: textContent)
         }
+        updateData()
+        tableView.reloadData()
         activityIndicator.stopAnimating()
         activityIndicator.isHidden = true
+    }
+    
+    func updateData(){
+        data = DBManager.sharedInstance.getContentFromDb()
     }
     
     func openEditior() {
@@ -163,17 +174,30 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     //MARK:: Table View delegate
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
+        return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return DBManager.sharedInstance.getContentFromDb().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: TextTableViewCell = tableView.dequeueReusableCell(withIdentifier: OCRViewController.IDENTIFIER, for: indexPath) as! TextTableViewCell
-        
+        let cell: TextTableViewCell = tableView.dequeueReusableCell(withIdentifier: OCRViewController.IDENTIFIER, for: indexPath) as! TextTableViewCell
+        let index = Int(indexPath.row)
+        let content = data[index] as TextContent
+        cell.label.text = content.content
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let contentViewController = ContentViewController.init(nibName: "ContentViewController", bundle: nil)
+        let index = Int(indexPath.row)
+        let content = data[index] as TextContent
+        contentViewController.content = content.content
+//        contentViewController.textContent.text = content.content
+        self.navigationController?.pushViewController(contentViewController, animated: true)
+        
+        
     }
     
     func registerXib(){

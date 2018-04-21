@@ -8,11 +8,15 @@
 
 import UIKit
 import TesseractOCR
-class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CropViewControllerDelegate {
+class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CropViewControllerDelegate, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageView: UIImageView!
+    
+    static let IDENTIFIER: String = "textContent"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +30,7 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         leftBarButtonItem.tintColor = UIColor.black
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
         self.navigationItem.rightBarButtonItem = leftBarButtonItem
+        self.registerXib()
     }
 
     override func didReceiveMemoryWarning() {
@@ -154,6 +159,27 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     func cropViewControllerDidCancel(_ controller: CropViewController) {
         controller.dismiss(animated: true, completion: nil)
         //updateEditButtonEnabled()
+    }
+    
+    //MARK:: Table View delegate
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: TextTableViewCell = tableView.dequeueReusableCell(withIdentifier: OCRViewController.IDENTIFIER, for: indexPath) as! TextTableViewCell
+        
+        
+        return cell
+    }
+    
+    func registerXib(){
+        let nib: UINib = UINib.init(nibName: "TextTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: OCRViewController.IDENTIFIER)
+        
     }
     
 }

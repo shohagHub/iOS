@@ -15,6 +15,7 @@ class ContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Content"
         textContent.text = content
         // Do any additional setup after loading the view.
     }

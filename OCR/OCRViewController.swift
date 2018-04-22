@@ -44,12 +44,12 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
 
     func performImageRecognition(_ image: UIImage){
        
-        if let tesseract = G8Tesseract(language: "eng+fra") {
+        if let tesseract = G8Tesseract(language: "eng") {
             tesseract.engineMode = .tesseractCubeCombined
             tesseract.pageSegmentationMode = .auto
             tesseract.image = image.g8_blackAndWhite()
             tesseract.recognize()
-            print(tesseract.recognizedText)
+//            print(tesseract.recognizedText)
             textView.text = tesseract.recognizedText
             let textContent: TextContent = TextContent()
             textContent.content = tesseract.recognizedText
@@ -148,6 +148,8 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     //MARK:: Custom Action
     @objc func infoButtonAction() {
         print("infoButtonAction()");
+        let info: InformationViewController = InformationViewController.init(nibName: "InformationViewController", bundle: nil)
+        self.navigationController?.pushViewController(info, animated: true)
     }
     
     // MARK: - //CropViewControllerDelegate

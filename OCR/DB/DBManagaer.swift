@@ -43,5 +43,23 @@ class DBManager {
 //    func contentId() -> Int?{
 //        return database.objects(TextContent.self).sorted(byKeyPath: "id").first?.id
 //    }
+    //MARK:: Configuration table
+    func getConfigurationFromDb() -> Results<Configuration>{
+        let results: Results<Configuration> = database.objects(Configuration.self)
+        return results
+    }
+    
+    func addConfig(object: Configuration){
+        try! database.write {
+            database.add(object, update: true)
+            print("Configuration added successfully")
+        }
+    }
+    
+    func getInformation() -> String?{
+        let results: Results<Configuration> = database.objects(Configuration.self).filter("key == 'info'")
+        let info = (results[0] as Configuration).value
+        return info
+    }
     
 }

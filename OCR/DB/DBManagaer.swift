@@ -37,6 +37,7 @@ class DBManager {
     func deleteFromDb(object: TextContent)   {
         try!   database.write {
             database.delete(object)
+            print("Delete Successfull")
         }
     }
     

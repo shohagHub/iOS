@@ -33,6 +33,7 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
         self.navigationItem.rightBarButtonItem = leftBarButtonItem
         self.registerXib()
+        self.tableView.allowsMultipleSelectionDuringEditing = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -200,6 +201,20 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         self.navigationController?.pushViewController(contentViewController, animated: true)
         self.tableView.deselectRow(at: indexPath, animated: true)
 //        self.tableView.selec
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        print("tableView commit editingStyle")
+        if editingStyle == .delete{
+            print("Operation for delete")
+            let index = Int(indexPath.row)
+            DBManager.sharedInstance.deleteFromDb(object: data[index] as TextContent)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
     
     func registerXib(){

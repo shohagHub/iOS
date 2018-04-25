@@ -198,8 +198,8 @@ class OCRViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         contentViewController.content = content.content
 //        contentViewController.textContent.text = content.content
         self.navigationController?.pushViewController(contentViewController, animated: true)
-        
-        
+        self.tableView.deselectRow(at: indexPath, animated: true)
+//        self.tableView.selec
     }
     
     func registerXib(){
